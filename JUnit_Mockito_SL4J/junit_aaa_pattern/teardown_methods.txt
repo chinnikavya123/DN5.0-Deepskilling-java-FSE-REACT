@@ -1,0 +1,14 @@
+Teardown Methods in JUnit:
+
+Teardown methods in JUnit are used to clean up or release resources after each test case is executed. 
+These methods ensure that each test runs independently without being affected by previous tests.
+In JUnit 5, teardown is implemented using the @AfterEach annotation.
+Reset objects after test execution
+Free memory or resources
+Prevent side effects between tests
+Maintain test isolation
+@AfterEach
+void tearDown() {
+    account = null;
+}
+Key Idea: Teardown methods run after every test method, ensuring a clean state for the next test.
